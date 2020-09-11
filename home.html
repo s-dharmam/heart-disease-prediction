@@ -1,0 +1,140 @@
+<html>
+  <head>
+    <title>heart_care</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="headerr">
+      <h1>Heart Disease Predictor</h1>
+    </div>
+    <div id="container">
+      <div class="form">
+        <input type="number" id="age" placeholder="Age" />
+      </div>
+
+      <div class="form">
+        <label>Gender</label>
+        <select id="sex">
+          <option value="1">Male</option>
+          <option value="0">Female</option>
+        </select>
+      </div>
+
+
+      <div class="form">
+        <label>Type of Chest Pain</label>
+        <select id="cp">
+          <option value="" disabled selected>select chest pain type</option>
+          <option value="0">asymptomatic</option>
+          <option value="1">atypical angina</option>
+          <option value="2">non-anginal pain</option>
+          <option value="3">typical angina</option>
+        </select>
+      </div>
+
+      <div class="form">
+        <input
+          type="number"
+          id="trestbps"
+          placeholder="resting blood pressure (in mm Hg)"
+        />
+      </div>
+
+      <div class="form">
+        <input
+          type="number"
+          id="chol"
+          placeholder="serum cholestoral in mg/dl"
+        />
+      </div>
+
+      <div class="form">
+        <label>fasting blood sugar </label>
+        <select id="fbs">
+          <option value="1">higher than 120 mg/dl</option>
+          <option value="0">lower than 120 mg/dl</option>
+        </select>
+      </div>
+
+      <div class="form">
+        <label>resting electrocardiographic results</label>
+        <select id="restecg">
+          <option value="0">
+            showing probabl left ventricular hypertrophy
+          </option>
+          <option value="1">normal</option>
+          <option value="2">having ST-T wave abnormality</option>
+        </select>
+      </div>
+
+      <div class="form">
+        <input
+          type="number"
+          id="thalach"
+          placeholder="maximum heart rate achieved"
+        />
+      </div>
+
+      <div class="form">
+        <label>exercise induced angina</label>
+        <select id="exang">
+          <option value="1">yes</option>
+          <option value="0">no</option>
+        </select>
+      </div>
+
+      <div class="form">
+        <input
+          type="number"
+          id="oldpeak"
+          placeholder="ST depression induced by exercise relative to rest"
+        />
+      </div>
+
+      <div class="form">
+        <label>the slope of the peak exercise ST segment</label>
+        <select id="slope">
+          <option value="0">downsloping</option>
+          <option value="1">flat</option>
+          <option value="2">upsloping</option>
+        </select>
+      </div>
+
+      <div class="form">
+        <label>number of major vessels (0-4) colored by flourosopy</label>
+        <select id="ca">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+
+      
+
+      
+
+      
+
+      <div class="form">
+        <label>thallium stress test</label>
+        <select id="thal">
+          <option value="" disabled selected>
+            select results of stress test
+          </option>
+          <option value="1">fixed defect</option>
+          <option value="2">blood flow is normal</option>
+          <option value="3">reversible defect</option>
+        </select>
+      </div>
+
+      <button type="button" onclick="getvalue();" id="submit">
+        Show Prediction
+      </button>
+    </div>
+    
+    <script src="index.js"></script>
+  </body>
+</html>

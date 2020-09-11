@@ -1,0 +1,54 @@
+
+ button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:10px;
+    float: bottom;
+  }
+  
+  .form{
+    margin:10px;
+    height: 5%;
+    background-color:#F5FFFA;
+    border-radius: 5px;
+    border-color: seagreen;
+  }
+
+  input,select{
+      height: 100%;
+      float: right;
+      width: 60%;
+      border-radius: 5px;
+      
+  }
+  #container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 100px;
+    height: 100%;
+  }
+  label{
+      margin-left: 50px;
+      margin: 3px;
+      font-size: large;
+  }
+  
+  
+  
+#headerr{
+    text-align: center;
+    background-color: tomato;
+    height:10%;
+    border-radius: 10px;
+    padding:2px;
+    margin: 10px;
+}
+ 
+#result{
+    background-color: sienna;
+}
